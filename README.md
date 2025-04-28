@@ -38,6 +38,56 @@ This project is a backend clone of Airbnb, designed to manage user registrations
 - **Project Manager (optional addition)**  
   Coordinates between different roles, ensures timelines are met, manages communication, and tracks project progress.
 
+## 🗄️ Database Design
+
+### Key Entities:
+
+#### 1. Users
+- **id**: Primary Key
+- **username**: Unique username
+- **email**: Unique email address
+- **password**: Hashed password
+- **date_joined**: Timestamp of registration
+- **role**: (e.g., Host, Guest)
+
+#### 2. Properties
+- **id**: Primary Key
+- **owner_id**: Foreign Key to Users (Host)
+- **title**: Property title
+- **description**: Property description
+- **location**: Property address or coordinates
+- **price_per_night**: Rental price per night
+
+#### 3. Bookings
+- **id**: Primary Key
+- **property_id**: Foreign Key to Properties
+- **user_id**: Foreign Key to Users (Guest)
+- **check_in_date**: Start date of booking
+- **check_out_date**: End date of booking
+- **status**: (e.g., Confirmed, Cancelled)
+
+#### 4. Payments
+- **id**: Primary Key
+- **booking_id**: Foreign Key to Bookings
+- **amount**: Payment amount
+- **payment_date**: Timestamp of payment
+- **payment_status**: (e.g., Paid, Pending)
+
+#### 5. Reviews
+- **id**: Primary Key
+- **property_id**: Foreign Key to Properties
+- **user_id**: Foreign Key to Users (Guest)
+- **rating**: Numerical rating (e.g., 1-5)
+- **comment**: Text review
+- **created_at**: Timestamp of review
+
+### Relationships:
+- A **User** can create multiple **Properties** (1-to-Many).
+- A **Property** can have multiple **Bookings** (1-to-Many).
+- A **Booking** belongs to one **User** (Guest) and one **Property** (Many-to-1).
+- A **Payment** is linked to a specific **Booking** (1-to-1).
+- A **Review** is created by a **User** for a **Property** (Many-to-1).
+
 ## 🚀 Getting Started
 Coming soon: Setup instructions, API usage, and deployment guides.
 
