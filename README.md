@@ -88,6 +88,29 @@ This project is a backend clone of Airbnb, designed to manage user registrations
 - A **Payment** is linked to a specific **Booking** (1-to-1).
 - A **Review** is created by a **User** for a **Property** (Many-to-1).
 
+## 🧩 Feature Breakdown
+
+### User Management
+Allows users to register, authenticate, and manage their profile information. It ensures that each user has a secure and personalized experience while using the platform.
+
+### Property Management
+Enables hosts to create, update, and delete property listings. This feature is essential for offering a wide range of accommodation options for guests to choose from.
+
+### Booking System
+Provides users the ability to book available properties for specific dates. It manages reservation details, booking status, and ensures proper scheduling between hosts and guests.
+
+### Payment Processing
+Handles secure transactions related to property bookings. It ensures that payments are recorded accurately, and booking statuses are updated based on payment outcomes.
+
+### Review System
+Allows users to leave feedback on properties after their stay. Reviews help build trust within the community and assist future guests in making informed decisions.
+
+### API Documentation
+Provides a clear and standardized way for developers to understand and integrate with the backend services. OpenAPI and GraphQL documentation ensure the APIs are easy to explore and use.
+
+### Database Optimization
+Involves indexing, caching, and efficient query handling to ensure the system remains fast and scalable as the number of users, properties, and bookings grow.
+
 ## 🚀 Getting Started
 Coming soon: Setup instructions, API usage, and deployment guides.
 
