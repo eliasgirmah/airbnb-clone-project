@@ -21,6 +21,23 @@ This project is a backend clone of Airbnb, designed to manage user registrations
 - **Containerization:** Docker
 - **CI/CD:** GitHub Actions (or other pipelines)
 
+## 👥 Team Roles
+
+- **Backend Developer**  
+  Responsible for building and maintaining the server-side logic, designing API endpoints, integrating third-party services, and ensuring the application is scalable and efficient.
+
+- **Database Administrator (DBA)**  
+  Designs, implements, and maintains the database schema. Handles indexing, optimization, backup strategies, and ensures data integrity and security.
+
+- **DevOps Engineer**  
+  Manages the deployment process, monitors server performance, sets up continuous integration/continuous deployment (CI/CD) pipelines, and ensures system scalability and reliability.
+
+- **QA Engineer**  
+  Ensures that all backend functionalities meet the project's requirements through thorough testing. Writes automated tests, performs manual testing, and reports bugs.
+
+- **Project Manager (optional addition)**  
+  Coordinates between different roles, ensures timelines are met, manages communication, and tracks project progress.
+
 ## 🚀 Getting Started
 Coming soon: Setup instructions, API usage, and deployment guides.
 
