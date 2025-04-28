@@ -111,6 +111,40 @@ Provides a clear and standardized way for developers to understand and integrate
 ### Database Optimization
 Involves indexing, caching, and efficient query handling to ensure the system remains fast and scalable as the number of users, properties, and bookings grow.
 
+## 🔒 API Security Overview
+
+Ensuring the security of the Airbnb Clone backend APIs is critical to protect user data, transactions, and system integrity. The following key security measures will be implemented:
+
+- **Authentication & Authorization**
+  - Use secure token-based authentication (e.g., JWT - JSON Web Tokens).
+  - Enforce role-based access control (RBAC) to limit access to sensitive endpoints based on user roles (Guest, Host, Admin).
+
+- **Input Validation and Sanitization**
+  - Validate and sanitize all incoming data to prevent injection attacks (e.g., SQL Injection, XSS).
+  - Use serializers in Django REST Framework to enforce data types and constraints.
+
+- **Rate Limiting and Throttling**
+  - Implement rate limits to prevent abuse and denial-of-service (DoS) attacks.
+  - Use Django REST Framework's throttling classes or integrate external tools like API Gateway.
+
+- **Secure Communications**
+  - Enforce HTTPS/TLS for all API traffic to ensure data encryption in transit.
+  - Redirect all HTTP traffic to HTTPS.
+
+- **Error Handling**
+  - Avoid exposing detailed error messages to clients.
+  - Log errors securely for debugging without leaking sensitive information.
+
+- **Data Protection**
+  - Hash sensitive information such as passwords using strong algorithms (e.g., PBKDF2, bcrypt).
+  - Store minimal sensitive data, and encrypt data at rest where necessary.
+
+- **Monitoring and Logging**
+  - Implement centralized logging to detect and respond to suspicious activities.
+  - Monitor authentication attempts, payment activities, and API access patterns.
+
+
+
 ## 🚀 Getting Started
 Coming soon: Setup instructions, API usage, and deployment guides.
 
